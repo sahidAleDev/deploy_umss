@@ -40,7 +40,7 @@ const $router = useRouter();
 const itemsImages = ref<Item[]>([]);
 const itemsVideos = computed(() => $store.mediaVideos as Media[] );
 const options = {
-  shareEl: false,
+  shareEl: true,
   children: 'img',
 };
 
@@ -172,12 +172,18 @@ getDateTime();
 </template>
 
 <style>
-.my-gallery, .my-videos {
+.my-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: center;
-  gap: 1rem;
   padding: 0;
+}
+
+.my-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-items: center;
+  gap: 0.6rem;
 }
 
 .gallery-thumbnail img {
