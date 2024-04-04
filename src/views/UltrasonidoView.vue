@@ -74,7 +74,7 @@ getDateTime();
 <template>
 
 
-  <div class="h-screen bg-green-100 p-4">
+  <div class="h-screen bg-green-50 p-4">
     <h1 class="mt-10 text-2xl font-semibold text-gray-800">
       {{ $store.ultrasonido?.paciente.nombre }}, Aquí tienes tus ultrasonidos.
     </h1>
@@ -96,8 +96,8 @@ getDateTime();
     -->
 
     <section class="mt-5 space-y-6 max-w-sm">
-      <div class="flex w-full items-center gap-2 bg-white p-2 rounded-full">
-        <figure class="rounded-full p-2 bg-green-50">
+      <div class="flex w-full items-center gap-2 p-2 rounded-full">
+        <figure class="rounded-full p-2 bg-green-100">
           <ImageIcon />
         </figure>
 
@@ -129,8 +129,8 @@ getDateTime();
     </section>
 
     <section class="mt-5 space-y-6 max-w-sm">
-      <div class="flex w-full items-center gap-2 bg-white p-2 rounded-full">
-        <figure class="rounded-full p-2 bg-green-50">
+      <div class="flex w-full items-center gap-2 p-2 rounded-full">
+        <figure class="rounded-full p-2 bg-green-100">
           <FileVideoIcon />
         </figure>
 
