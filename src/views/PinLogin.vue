@@ -173,20 +173,26 @@ onBeforeMount(async () => {
     </header>
 
     <div class="mt-10 flex justify-center gap-4">
-      <select name=""  v-model="selectedDay" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
-        <option value="" class="bg-white">DÍA</option>
-        <option v-for="day in days" :key="day" :value="day" class="bg-white">{{ day }}</option>
-      </select>
+      <div class="wrapper">
+        <select name=""  v-model="selectedDay" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-4  rounded-md border-2">
+          <option value="" class="bg-white">DÍA</option>
+          <option v-for="day in days" :key="day" :value="day" class="bg-white">{{ day }}</option>
+        </select>
+      </div>
       
-      <select name=""  v-model="selectedMonth" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
-        <option value="" class="bg-white">MES</option>
-        <option v-for="month in months" :key="month.value" :value="month.value" class="bg-white">{{ month.label }}</option>
-      </select>
+      <div class="wrapper">
+        <select name=""  v-model="selectedMonth" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-4 rounded-md border-2">
+          <option value="" class="bg-white">MES</option>
+          <option v-for="month in months" :key="month.value" :value="month.value" class="bg-white">{{ month.label }}</option>
+        </select>
+      </div>
       
-      <select name="" v-model="selectedYear" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
-        <option value="" class="bg-white">AÑO</option>
-        <option v-for="year in years" :key="year" :value="year" class="bg-white">{{ year }}</option>
-      </select>
+      <div class="wrapper">
+        <select name="" v-model="selectedYear" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-4 rounded-md border-2">
+          <option value="" class="bg-white">AÑO</option>
+          <option v-for="year in years" :key="year" :value="year" class="bg-white">{{ year }}</option>
+        </select>
+      </div>
     </div>
 
     <div 
@@ -238,5 +244,24 @@ input::placeholder {
   font-size: 15px;
   text-align: center;
   font-weight: 600;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 100px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::after {
+  content: "▼";
+  color: green;
+  font-size: 0.8rem;
+  top: 16px;
+  right: 18px;
+  position: absolute;
 }
 </style>
