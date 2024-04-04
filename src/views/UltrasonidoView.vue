@@ -140,12 +140,10 @@ getDateTime();
         </p>
       </div>
 
-      <div class="my-videos">
-        <video v-for="item in itemsVideos" :key="item.id" class="w-full rounded-xl" controls>
-          <source :src="item.url" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      <video v-for="item in itemsVideos" :key="item.id" class="w-full rounded-xl" controls>
+        <source :src="item.url" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
 

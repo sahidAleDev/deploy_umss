@@ -173,17 +173,17 @@ onBeforeMount(async () => {
     </header>
 
     <div class="mt-10 flex justify-center gap-4">
-      <select name=""  v-model="selectedDay" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-1.5 rounded-md border-2  ">
+      <select name=""  v-model="selectedDay" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
         <option value="" class="bg-white">DÍA</option>
         <option v-for="day in days" :key="day" :value="day" class="bg-white">{{ day }}</option>
       </select>
       
-      <select name=""  v-model="selectedMonth" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-1.5 rounded-md border-2  ">
+      <select name=""  v-model="selectedMonth" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
         <option value="" class="bg-white">MES</option>
         <option v-for="month in months" :key="month.value" :value="month.value" class="bg-white">{{ month.label }}</option>
       </select>
       
-      <select name="" v-model="selectedYear" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs px-2 py-1.5 rounded-md border-2  ">
+      <select name="" v-model="selectedYear" id="" class="bg-green-200/95 border-green-700 text-green-700 text-xs p-2 rounded-md border-2  ">
         <option value="" class="bg-white">AÑO</option>
         <option v-for="year in years" :key="year" :value="year" class="bg-white">{{ year }}</option>
       </select>
