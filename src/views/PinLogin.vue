@@ -249,7 +249,7 @@ input::placeholder {
 select {
   -webkit-appearance: none;
   appearance: none;
-  min-width: 100px;
+  min-width: 110px;
 }
 
 .wrapper {
@@ -261,7 +261,7 @@ select {
   color: green;
   font-size: 0.8rem;
   top: 16px;
-  right: 18px;
+  right: 13px;
   position: absolute;
 }
 </style>
