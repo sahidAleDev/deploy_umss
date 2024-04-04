@@ -74,7 +74,7 @@ getDateTime();
 <template>
 
 
-  <div class="h-screen bg-green-50 p-4">
+  <div class="h-screen bg-green-50 p-2">
     <h1 class="mt-10 text-2xl font-semibold text-gray-800">
       {{ $store.ultrasonido?.paciente.nombre }}, Aquí tienes tus ultrasonidos.
     </h1>

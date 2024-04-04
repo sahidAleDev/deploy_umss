@@ -153,7 +153,7 @@ onBeforeMount(async () => {
 
 <template>
 
-  <div class="p-4 h-screen max-w-sm mx-auto">
+  <div class="p-2 h-screen max-w-sm mx-auto">
     <header class="mt-10">
       <figure>
         <img src="/LogoSaludDigna.svg" class="max-w-[15rem]" alt="">
