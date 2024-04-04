@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.text-orange-sl {
+  color: #D98200;
+}
+
+.bg-orange-sl {
+  background-color: #D98200;
+}
